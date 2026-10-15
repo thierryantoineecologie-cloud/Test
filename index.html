@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Un espace de découverte et d’écoute autour d’Olivier Douzou.">
+<title>Test Douzou — Un espace d’écoute</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a class="brand" href="./index.html">Test Douzou<span aria-hidden="true">●</span></a><a href="#ecouter">L’espace d’écoute ↗</a></header>
+<main>
+<div class="intro"><span class="eyebrow">Une invitation à découvrir</span><p>Bienvenue dans cet espace de découverte et d’écoute autour d’Olivier Douzou.</p></div>
+<div class="layout">
+<section class="portrait" aria-labelledby="portrait-title">
+<div class="top"><span class="eyebrow">Le regard & la voix</span><span>01 / Portrait</span></div>
+<h1 id="portrait-title">Olivier<br><em>Douzou.</em></h1>
+<div class="art" aria-hidden="true"><div class="circle"></div><div class="stem"></div><div class="square"></div><span>FORMES LIBRES</span></div>
+<div class="copy"><div class="line" aria-hidden="true"></div><h2>Un univers à explorer.</h2><p>Cet espace accueillera une présentation d’Olivier Douzou, de son parcours et de son univers créatif.</p><p class="placeholder">Texte de présentation à compléter.</p></div>
+</section>
+<section class="listening" id="ecouter" aria-labelledby="listen-title">
+<span class="eyebrow">La bibliothèque sonore</span><h2 id="listen-title">Prenez le temps<br><em>d’écouter.</em></h2>
+<p class="description">Cinq pistes pour ouvrir une parenthèse.<br>Choisissez une puce pour lancer l’écoute.</p>
+<p class="notice">Les enregistrements seront bientôt ajoutés. Les titres ci-dessous sont provisoires.</p>
+<ol class="tracks">
+<li><button data-track="1" aria-label="Écouter la piste 1, Découvrir"><span class="play" aria-hidden="true">▶</span><span class="track-copy"><span class="number">PISTE 01</span><span class="title">Découvrir</span></span><span class="state">À venir</span></button></li>
+<li><button data-track="2" aria-label="Écouter la piste 2, Imaginer"><span class="play" aria-hidden="true">▶</span><span class="track-copy"><span class="number">PISTE 02</span><span class="title">Imaginer</span></span><span class="state">À venir</span></button></li>
+<li><button data-track="3" aria-label="Écouter la piste 3, Dessiner"><span class="play" aria-hidden="true">▶</span><span class="track-copy"><span class="number">PISTE 03</span><span class="title">Dessiner</span></span><span class="state">À venir</span></button></li>
+<li><button data-track="4" aria-label="Écouter la piste 4, Raconter"><span class="play" aria-hidden="true">▶</span><span class="track-copy"><span class="number">PISTE 04</span><span class="title">Raconter</span></span><span class="state">À venir</span></button></li>
+<li><button data-track="5" aria-label="Écouter la piste 5, Prolonger"><span class="play" aria-hidden="true">▶</span><span class="track-copy"><span class="number">PISTE 05</span><span class="title">Prolonger</span></span><span class="state">À venir</span></button></li>
+</ol>
+<p id="status" role="status">À votre rythme, une piste à la fois.</p>
+<audio id="player" controls preload="none" hidden aria-label="Lecteur de la piste sélectionnée"></audio>
+<noscript><p>Activez JavaScript pour utiliser les boutons d’écoute.</p></noscript>
+</section>
+</div>
+</main>
+<footer><span>Test Douzou</span><span>Un espace pour regarder, imaginer, écouter.</span><a href="#">Retour en haut ↑</a></footer>
+<script src="script.js"></script>
+</body></html>
