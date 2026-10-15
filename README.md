@@ -1,39 +1,30 @@
 # Test Douzou
 
-Site statique sans framework ni dépendance externe. HTML et CSS composent la page ; un petit fichier JavaScript gère les cinq boutons audio, sans lecture automatique.
+Page statique autonome, sans framework ni dépendance externe. La mise en page, les couleurs et les commandes audio sont intégrées dans `index.html` pour éviter tout problème de chargement de fichiers séparés.
 
-## Visualiser le site
+## Voir la page
 
-Sur GitHub, choisissez **Code → Download ZIP**, décompressez l’archive, puis double-cliquez sur `index.html`. La page s’ouvre dans votre navigateur. Gardez `style.css`, `script.js` et le dossier `audio` à côté du fichier HTML.
+1. Sur GitHub, choisissez **Code → Download ZIP**.
+2. Décompressez entièrement l’archive (clic droit → Extraire tout sur Windows).
+3. Ouvrez le dossier extrait puis double-cliquez sur `index.html`.
+
+Ne cliquez pas sur le fichier HTML dans l’interface GitHub pour visualiser le site : GitHub y affiche son code source. Vous pouvez aussi télécharger uniquement `index.html` : les couleurs et la mise en page seront conservées.
 
 ## Personnaliser
 
-- `index.html` : texte de présentation et titres provisoires des cinq pistes.
-- `style.css` : couleurs, typographie et adaptation au téléphone.
-- `audio/README.md` : instructions pour ajouter les sons et les activer dans `script.js`.
+Tout se trouve dans `index.html` : les styles dans le bloc `<style>`, les textes dans le bloc `<body>`, les commandes audio dans le bloc `<script>` à la fin.
 
-Aucun enregistrement n’est fourni pour le moment. Chaque bouton affiche un message d’attente tant que sa piste n’est pas configurée. L’illustration géométrique est décorative et ne représente pas une œuvre d’Olivier Douzou.
+Les textes de présentation et titres des pistes sont provisoires. L’illustration géométrique est décorative et ne représente pas une œuvre d’Olivier Douzou. Aucun enregistrement n’est fourni : consultez `audio/README.md` pour ajouter vos MP3.
 
-## Envoyer les modifications sur GitHub
+## Envoyer les modifications
 
-Dans votre dépôt GitHub, choisissez **Add file → Upload files**. Déposez `index.html`, `style.css`, `script.js`, `README.md` et le dossier `audio` à la racine du dépôt, sans dossier supplémentaire autour. Ajoutez une description et cliquez sur **Commit changes**. Pour changer un texte ensuite, ouvrez le fichier sur GitHub, cliquez sur le crayon et enregistrez avec **Commit changes**.
-
-Si vous utilisez Git dans un terminal, depuis le dossier du dépôt :
-
-```sh
-git add index.html style.css script.js README.md audio
-git commit -m "Créer le site Test Douzou"
-git push origin HEAD:main
-```
-
-Si Git indique que la branche distante a changé, récupérez et examinez les changements avant de réessayer ; ne forcez pas l’envoi.
+Sur GitHub, ouvrez `index.html`, cliquez sur le crayon, modifiez puis choisissez **Commit changes**. Vous pouvez aussi utiliser **Add file → Upload files** pour envoyer votre fichier modifié à la racine du dépôt.
 
 ## Publier avec GitHub Pages
 
-1. Envoyez les fichiers sur la branche `main`.
-2. Dans le dépôt, ouvrez **Settings → Pages**.
-3. Dans **Build and deployment**, choisissez **Deploy from a branch**.
-4. Sélectionnez **main** puis **/ (root)** et cliquez sur **Save**.
-5. Attendez la fin du déploiement : l’adresse publique apparaît sur cette même page.
+1. Dans le dépôt, ouvrez **Settings → Pages**.
+2. Choisissez **Deploy from a branch**.
+3. Sélectionnez **main** puis **/ (root)** et cliquez sur **Save**.
+4. Attendez la fin du déploiement : l’adresse publique apparaît sur cette page.
 
-Les modifications envoyées ensuite sur `main` seront publiées automatiquement. Tous les chemins sont relatifs pour fonctionner avec GitHub Pages. Selon la visibilité du dépôt et votre abonnement GitHub, Pages peut nécessiter un dépôt public.
+Les modifications envoyées ensuite sur `main` sont publiées automatiquement. Selon la visibilité du dépôt et votre abonnement, Pages peut nécessiter un dépôt public.

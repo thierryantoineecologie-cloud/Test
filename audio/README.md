@@ -1,7 +1,7 @@
 # Ajouter les enregistrements
 
 Déposez ici vos cinq MP3, nommés `piste-1.mp3` à `piste-5.mp3`.
-Dans `script.js`, remplacez la ligne `const sources = ...` par :
+Dans le bloc `<script>` situé à la fin de `index.html`, remplacez la ligne `const sources = ...` par :
 
 ```js
 const sources = {
